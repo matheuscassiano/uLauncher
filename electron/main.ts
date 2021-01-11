@@ -9,11 +9,13 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 1100,
     height: 700,
+    frame: false,
     backgroundColor: '#191622',
     webPreferences: {
       nodeIntegration: true
     }
   })
+  // mainWindow.setMenuBarVisibility(false)
 
   if (process.env.NODE_ENV === 'development') {
     mainWindow.loadURL('http://localhost:4000')
