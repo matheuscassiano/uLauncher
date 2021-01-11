@@ -9,22 +9,41 @@ const rotate = keyframes`
   }
 `
 
-export const Container = styled.div`
-    height: 100vh;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+export const Menu = styled.div`
+  width: 100%;
+  height: 2em;
 `
 
-export const Image = styled.img`
-    width: 300px;
-    animation: ${rotate} 15s linear infinite;
-    opacity: 0.1;
+export const Container = styled.div`
+  overflow: hidden;
+  max-height: 100vh;
 `
-export const Text = styled.p`
-    margin-top: 35px;
-    font-size: 20px;
-    font-weight: bold;
+
+export const Search = styled.input`
+  width: 100%;
+  border: 0;
+  padding: 1em;
+  color: white;
+  font-size: 2rem;
+  background-color: transparent;
+`
+
+export const List = styled.ul`
+  width: 100%;
+  max-height: 50%;
+  font-size: 1rem;
+  list-style: none;
+  padding: 1em 0;
+  overflow-y: auto;
+`
+
+export const ItemList = styled.li`
+  font-size: 1rem;
+  list-style: none;
+  padding: 1em;
+  cursor: pointer;
+
+  :hover {
+    background: #44475a;
+  }
 `
