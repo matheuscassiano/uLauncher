@@ -5,25 +5,6 @@ import installExtension, { REACT_DEVELOPER_TOOLS, REDUX_DEVTOOLS } from 'electro
 
 let mainWindow: Electron.BrowserWindow | null
 
-// function runCommand(erro, data, getter) {
-  // data = data.split()
-  // data.forEach((item, index) => {
-  //   data[index] = '789'
-  // })
-  // if (error) {
-  //   console.log("error", error.message)
-  //   return
-  // }
-  // if (getter) {
-  //   global.programms = data
-  //   console.log(remote.getGlobal('programms'))
-  //   return
-  // }
-  // global.programms = data
-  // console.log(remote.getGlobal('programms'))
-//   return data
-// }
-
 function createWindow () {
   mainWindow = new BrowserWindow({
     width: 500,
